@@ -6,8 +6,13 @@ void setup()
 void draw()
 {
 	background(0);
-	Die antwoord = new die();
-	antwoord.show();
+	for (x = 0; x <= 720; x = x + 80)
+	for (y = 0; y <= 720; y = y + 80)
+	{
+	Die lucky = new die(x,y);
+	lucky.roll();
+	lucky.show();
+	}	
 }
 void mousePressed()
 {
@@ -18,17 +23,22 @@ class Die //models one single dice cube
 	int x, y, value; //variable declarations here
 	Die(int x, int y) //constructor
 	{
-		value = (int)(Math.random() * 6)) + 1;
-		x = 10;
-		y = 10;
+		myX = x;
+		myY = y;
+		value  = ((int)Math.random() * 6) + 1);
 
 	}
 	void roll()
 	{
-		//your code here
+	//one
+	
+	{
+
+	}
 	}
 	void show()
 	{
-		//your code here
+		rect(x,y,80,80);
 	}
 }
+
