@@ -41,4 +41,3 @@ class Die //models one single dice cube
 		rect(x,y,80,80);
 	}
 }
-
