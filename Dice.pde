@@ -6,11 +6,10 @@ void setup()
 void draw()
 {
 	background(0);
-	for (x = 0; x <= 720; x = x + 80)
-	for (y = 0; y <= 720; y = y + 80)
+	for (int x = 0; x <= 720; x = x + 80)
+	for (int y = 0; y <= 720; y = y + 80)
 	{
-	Die lucky = new die(x,y);
-	lucky.roll();
+	Die lucky = new Die(x,y);
 	lucky.show();
 	}	
 }
@@ -20,24 +19,42 @@ void mousePressed()
 }
 class Die //models one single dice cube
 {
-	int x, y, value; //variable declarations here
+	int myX, myY, value; //variable declarations here
 	Die(int x, int y) //constructor
 	{
 		myX = x;
 		myY = y;
-		value  = ((int)Math.random() * 6) + 1);
-
 	}
 	void roll()
 	{
-	//one
-	
-	{
-
-	}
+		value  = ((int)(Math.random() * 6) + 1);
 	}
 	void show()
 	{
-		rect(x,y,80,80);
-	}
-}
+		rect(myX,myY,80,80,25);
+	{
+		//one
+		if(value == 1);
+		{
+			fill(255);
+			ellipse(myX + 40,myY + 40,15,15);
+		}
+	
+		//two
+		if(value == 2);
+		{
+			fill(255);
+			ellipse(myX + 20,myY + 20,15,15);
+			ellipse(myX + 60,myY + 60,15,15);
+		}
+		//three
+		if(value == 3);
+		{
+			fill(255);
+			ellipse(myX + 20,myY + 20,15,15);
+			ellipse(myX + 60,myY + 60,15,15);
+			ellipse(myX + 40,myY + 40,15,15);
+		}
+
+	
+
