@@ -11,8 +11,8 @@ void draw()
 		for (int y = 0; y <= 720; y = y + 80)
 			{
 				Die lucky = new Die(x,y);
-				lucky.show();
 				lucky.roll();
+				lucky.show();
 			}
 	}
 }
