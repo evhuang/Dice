@@ -46,14 +46,14 @@ class Die //models one single dice cube
 			ellipse(myX + 40,myY + 40,15,15);
 		}
 		//two
-		else if(value == 2);
+		if(value == 2);
 		{
 			fill(0);
 			ellipse(myX + 20,myY + 20,15,15);
 			ellipse(myX + 60,myY + 60,15,15);
 		}
 		//three
-		else if(value == 3);
+		if(value == 3);
 		{
 			fill(0);
 			ellipse(myX + 20,myY + 20,15,15);
@@ -61,7 +61,7 @@ class Die //models one single dice cube
 			ellipse(myX + 40,myY + 40,15,15);
 		}
 		//four
-		else if(value == 4);
+		if(value == 4);
 		{
 			fill(0);
 			ellipse(myX + 20,myY + 20,15,15);
@@ -70,7 +70,7 @@ class Die //models one single dice cube
 			ellipse(myX + 60,myY + 60,15,15);
 		}
 		//five
-		else if(value == 5);
+		if(value == 5);
 		{
 			fill(0);
 			ellipse(myX + 20,myY + 20,15,15);
@@ -80,7 +80,7 @@ class Die //models one single dice cube
 			ellipse(myX + 40,myY + 40,15,15);
 		}
 		//six
-		else if(value == 6);
+		if(value == 6);
 		{
 			fill(0);
 			ellipse(myX + 20,myY + 20,15,15);
