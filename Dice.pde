@@ -10,7 +10,7 @@ void draw()
 	{
 		for (int y = 0; y <= 720; y = y + 80)
 			{
-				Die lucky = new Die(x,y);
+				Die lucky = new Die();
 				lucky.roll();
 				lucky.show();
 			}
@@ -32,7 +32,7 @@ class Die //models one single dice cube
 	}
 	void roll()
 	{
-		value  = (int)(Math.random() * 6 + 1);
+		value  = (int)(Math.random() * 6 )+ 1;
 	}
 	void show()
 	{
