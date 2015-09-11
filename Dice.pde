@@ -2,10 +2,12 @@ void setup()
 {
 	size(800,800);
 	noLoop();
+	textAlign(CENTER);
 }
 void draw()
 {
 	background(0);
+	rollTotal = 0;
 	for (int x = 0; x <= 720; x = x + 80)
 	{
 		for (int y = 0; y <= 720; y = y + 80)
@@ -15,6 +17,7 @@ void draw()
 				lucky.show();
 			}
 	}
+	rollTotal = rollTotal + value;
 }
 void mousePressed()
 {
