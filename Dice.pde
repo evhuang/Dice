@@ -32,6 +32,7 @@ class Die //models one single dice cube
 	}
 	void roll()
 	{
+		noLoop();
 		value  = (int)(Math.random() * 6 )+ 1;
 	}
 	void show()
