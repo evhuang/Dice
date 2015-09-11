@@ -87,7 +87,7 @@ class Die //models one single dice cube
 			ellipse(myX + 20,myY + 20,15,15);
 			ellipse(myX + 60,myY + 20,15,15);
 			ellipse(myX + 60,myY + 60,15,15);
-			ellipse(myX + 60,myY + 20,15,15);
+			ellipse(myX + 20,myY + 60,15,15);
 			ellipse(myX + 20,myY + 40,15,15);
 			ellipse(myX + 60,myY + 40,15,15);
 		}
