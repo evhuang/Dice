@@ -10,7 +10,7 @@ void draw()
 	{
 		for (int y = 0; y <= 720; y = y + 80)
 			{
-				Die lucky = new Die();
+				Die lucky = new Die(x,y);
 				lucky.roll();
 				lucky.show();
 			}
